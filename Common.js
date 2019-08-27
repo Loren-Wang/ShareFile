@@ -15,7 +15,7 @@
  * @returns {string} 参数值
  */
 function jstlwGetUrlParams(key) {
-    if (key instanceof String) {
+    if (jstlwParamsIsStrinng(key)) {
         //地址转码
         let url = decodeURI(document.URL);
         //读取参数部分
@@ -42,3 +42,24 @@ function jstlwGetUrlParams(key) {
     }
     return key
 }
+
+/**
+ * 获取参数类型
+ * @param params 参数
+ * @returns  参数类型
+ */
+function jstlwGetParamsType(params) {
+    return Object.prototype.toString.call(params).constructor
+}
+
+/**
+ * 判断参数是否是字符串
+ * @param params 参数
+ * @returns {boolean} 是否是字符串，true为是
+ */
+function jstlwParamsIsStrinng(params) {
+    return jstlwGetParamsType(params) === String
+}
+
+
+
