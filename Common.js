@@ -14,7 +14,7 @@ $(
      * @param key 参数名称
      * @returns {string} 参数值
      */
-    function commonGetUrlParams(key) {
+    function jstlwGetUrlParams(key) {
         if (key instanceof String) {
             //地址转码
             let url = decodeURI(document.URL);
