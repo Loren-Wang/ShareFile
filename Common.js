@@ -40,5 +40,5 @@ function jstlwGetUrlParams(key) {
             }
         }
     }
-    return params
+    return key
 }
