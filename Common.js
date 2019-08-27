@@ -14,7 +14,7 @@ $(
      * @param key 参数名称
      * @returns {string} 参数值
      */
-    function commonGetUrlParams(key: string): string {
+    function commonGetUrlParams(key): string {
         //地址转码
         let url = decodeURI(document.URL);
         //读取参数部分
