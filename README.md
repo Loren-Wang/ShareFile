@@ -1,2 +1,1 @@
-# WebSiteCommonFile
-网站通用文件夹
+共享文件仓库
