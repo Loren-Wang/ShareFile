@@ -1,2 +1,2 @@
 # WebSiteCommonFile
-网址通用文件夹
+网站通用文件夹
