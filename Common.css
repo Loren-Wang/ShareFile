@@ -1,0 +1,36 @@
+/*父级水平垂直居中样式*/
+.horizontal-and-vertical-center-for-parent{
+    /* flex布局 */
+    display: flex;
+    /* 使子项目水平居中 */
+    justify-content: center;
+    /* 使子项目垂直居中 */
+    align-items: center;
+}
+/*水平居中样式*/
+.horizontal-center-have-width{
+    margin: 0 auto;
+}
+/*水平居中样式（子集没有宽度的父级样式）*/
+.horizontal-center-child-have-not-width-for-parent{
+    text-align: center;
+}
+/*水平居中样式（子集没有宽度的子集样式）*/
+.horizontal-center-child-have-not-width{
+    display: inline-block;
+}
+/*垂直居中样式（子集没有宽度的父级样式）*/
+.vertical-center-child-have-not-width-for-parent{
+    position: relative;
+}
+/*垂直居中样式（子集没有宽度的子级样式）*/
+.vertical-center-child-have-not-width{
+    position: relative;
+}
+/*垂直居中样式（子集没有宽度的父级样式，flex模式）*/
+.vertical-center-child-have-not-width-for-parent-flex{
+    display: flex;
+    /* 垂直居中 */
+    align-items: center;
+}
+
