@@ -66,7 +66,7 @@ function jstlwParamsIsString(params) {
  * @param params 参数
  * @return 返回是否为空
  */
-function jstlwParamsIsEmpty(params): boolean {
+function jstlwParamsIsEmpty(params) {
     return params == null || jstlwGetParamsType(params) === undefined
 }
 /**
@@ -74,7 +74,7 @@ function jstlwParamsIsEmpty(params): boolean {
  * @param params 参数
  * @return 返回是否为空
  */
-function jstlwParamsIsEmptyStr(params): boolean {
+function jstlwParamsIsEmptyStr(params) {
     return jstlwParamsIsEmpty(params) || (jstlwParamsIsString(params) && params.length === 0)
 }
 
