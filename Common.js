@@ -57,8 +57,25 @@ function jstlwGetParamsType(params) {
  * @param params 参数
  * @returns {boolean} 是否是字符串，true为是
  */
-function jstlwParamsIsStrinng(params) {
+function jstlwParamsIsString(params) {
     return jstlwGetParamsType(params) === String
+}
+
+/**
+ * 判断参数是否为空
+ * @param params 参数
+ * @return 返回是否为空
+ */
+function jstlwParamsIsEmpty(params): boolean {
+    return params == null || jstlwGetParamsType(params) === undefined
+}
+/**
+ * 判断参数是否为空字符串或者空
+ * @param params 参数
+ * @return 返回是否为空
+ */
+function jstlwParamsIsEmptyStr(params): boolean {
+    return jstlwParamsIsEmpty(params) || (jstlwParamsIsString(params) && params.length === 0)
 }
 
 
