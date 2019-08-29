@@ -15,7 +15,7 @@
  * @returns {string} 参数值
  */
 function jstlwGetUrlParams(key) {
-    if (jstlwParamsIsStrinng(key)) {
+    if (jstlwParamsIsString(key)) {
         //地址转码
         let url = decodeURI(document.URL);
         //读取参数部分
@@ -69,6 +69,7 @@ function jstlwParamsIsString(params) {
 function jstlwParamsIsEmpty(params) {
     return params == null || jstlwGetParamsType(params) === undefined
 }
+
 /**
  * 判断参数是否为空字符串或者空
  * @param params 参数
