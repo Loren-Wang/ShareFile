@@ -79,6 +79,16 @@ function jstlwParamsIsEmptyStr(params) {
     return jstlwParamsIsEmpty(params) || (jstlwParamsIsString(params) && params.length === 0)
 }
 
+/**
+ * 开发环境标记
+ */
+const DEVELOP_TAG = "development";
 
+/**
+ * 是否是开发环境
+ */
+export function isDevelopEnvironment() {
+    return process.env.NODE_ENV === DEVELOP_TAG
+}
 
 
