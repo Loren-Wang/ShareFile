@@ -80,15 +80,10 @@ function jstlwParamsIsEmptyStr(params) {
 }
 
 /**
- * 开发环境标记
- */
-const DEVELOP_TAG = "development";
-
-/**
  * 是否是开发环境
  */
-export function isDevelopEnvironment() {
-    return process.env.NODE_ENV === DEVELOP_TAG
+function isDevelopEnvironment() {
+    return process.env.NODE_ENV === "development"
 }
 
 
