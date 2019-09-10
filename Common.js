@@ -67,7 +67,7 @@ function jstlwParamsIsString(params) {
  * @return 返回是否为空
  */
 function jstlwParamsIsEmpty(params) {
-    return params == null || jstlwGetParamsType(params) === undefined
+    return params == null || jstlwGetParamsType(params) === undefined || (jstlwParamsIsString(params) && params === "")
 }
 
 /**
