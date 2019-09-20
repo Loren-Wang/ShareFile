@@ -21,7 +21,7 @@ function jstlwGetUrlParams(key) {
         let reg = new RegExp("(^|&)"+ key +"=([^&]*)(&|$)");
         let arg = window.location.search.substr(1).match(reg);
         if(arg!=null){
-            return  unescape(r[2]);
+            return  unescape(arg[2]);
         }
 //         //读取参数部分
 //         let params = url.substring(url.indexOf("?"), url.length);
